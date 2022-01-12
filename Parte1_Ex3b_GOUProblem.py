@@ -21,7 +21,7 @@ model.objective = 'BIOMASS_Ec_iML1515_core_75p37M'
 evaluator_1 = BPCY(BIOMASS_ID, PRODUCT_ID, method = SimulationMethod.lMOMA)
 evaluator_2 = WYIELD(BIOMASS_ID, PRODUCT_ID)
 
-problem = GOUProblem(model, fevaluation=[evaluator_1, evaluator_2], envcond = envcond, candidate_min_size = 1, candidate_max_size = 1)
+problem = GOUProblem(model, fevaluation=[evaluator_1, evaluator_2], envcond = envcond, candidate_max_size = 1)
 
 ea = EA(problem, max_generations = 5, visualizer = True, mp = True)
 
