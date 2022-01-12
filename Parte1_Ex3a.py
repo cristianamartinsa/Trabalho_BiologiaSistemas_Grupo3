@@ -27,4 +27,4 @@ pandas.set_option('display.max_rows', 2000)
 
 # Deleções
 delecao = single_gene_deletion(model)
-print(deletion_results.sort_values(by = ['growth'], ascending = False))
+print(delecao.sort_values(by = ['growth'], ascending = False))
